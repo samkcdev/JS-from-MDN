@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      
+</head>
+<body>
+      <ul class="output">
+            
+      </ul>
+</body>
+<script>
+      var list = document.querySelector("ul.output");
+      list.innerHTML = '';
+      var actors = "Millie Bobby Brown, Noah Schanapp";
+      // split turns string into array
+      var strangerThingsCast = actors.split('o');
+      console.log(strangerThingsCast);
+      for(var i=0;i<strangerThingsCast.length;i++){
+            var result = strangerThingsCast[i];
+            // console.log(result);
+            var listItem = document.createElement('li');
+            listItem.textContent = result;
+            list.appendChild(listItem);
+      };
+
+      
+</script>
+</html>
