@@ -8,7 +8,6 @@ var stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
 
 for (var i = 0; i < stations.length; i++) {
   var input = stations[i];
-
 var stationCode = input.slice(0,3);
 console.log(stationCode);
 var characterIndex = input.indexOf(';');
